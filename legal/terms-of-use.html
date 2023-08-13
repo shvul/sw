@@ -1,0 +1,689 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Terms of Use</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="72336263-6995-4bbc-b3a1-5867d5b781cd" class="page sans"><header><h1 class="page-title">Terms of Use</h1><p class="page-description"></p><table class="properties"><tbody></tbody></table></header><div class="page-body"><p id="92307d78-53eb-477b-9dfc-ccae262c9e7b" class="">Thank you for showing interest in Swell App (“app,” “Swell,” “we,” “us” or “our”). </p><p id="b75ea746-3d6d-4e2e-8e2f-42db85ca752f" class="">These Terms &amp; Conditions govern the use of the content and services offered through Swell App, Swell website and Swell social media accounts (collectively “Services”). By using or accessing our Services you accept these Terms &amp; Conditions. </p><p id="6be1c042-9521-4d08-a8c3-577cb04439e7" class="">
+</p><h3 id="65d794c6-6b61-4c55-aa0e-e5a2098e2d2c" class="">Use of the App</h3><p id="ff9264d9-f43b-4ae2-86dd-484d2180e03d" class="">App is designed to help users improve their mental health by keeping a diary for personal reflection. You are solely responsible for the content you create and store within App, including diary entries, voice recording, photos and any other data entered.</p><p id="d536bb7b-4884-410a-b410-5731b111ee0a" class="">You must be at least 16 years old to use the App. By using the App, you represent that you are at least 16 years old. </p><p id="9f623f18-4e84-4c59-a102-7d099f1ecfe5" class="">You agree not to use the App for any unlawful or unauthorized purposes. You must comply with all applicable laws and regulations while using the App. </p><p id="4beb098e-b99d-4e8f-b5c1-486a21afce25" class="">
+</p><h3 id="0027b739-74a1-4629-8b26-94d044da0d2e" class="">Restrictions of Use </h3><p id="28164733-be4a-49d8-a505-fe2731e9e141" class="">Unless the Owner has authorized you to distribute the App, you shall not make or distribute copies of the App or transfer the App from one device to another. You shall not decompile, reverse engineer, disassemble, include in other software, or translate the App, or use the App for any commercial purposes. You shall not modify, alter, change or otherwise make any modification to the App or create derivative works based upon the App. You shall not rent, lease, resell, sub-license, assign, distribute or otherwise transfer the App or this license. Any attempt to do so shall be void and of no effect.</p><p id="02209e33-cc37-4c8c-aab1-c97b6f533817" class="">
+</p><h3 id="59171da2-deef-430e-bd58-61a3e39c1c81" class="">Accounts and Subscriptions</h3><p id="9a317a69-e002-4acc-8fe9-acde23013ea1" class="">To use Swell registration is not required, but to download and use the App you must sign in with your Apple ID. Relevant rules of Apple Inc. respectively located at: <a href="https://www.apple.com/itunes">https://www.apple.com/itunes</a>. </p><p id="50d06c9a-649a-4259-8e4a-24ebfb67f939" class="">The App offers the Pro subscription that grants you access to additional features. By paying the subscription fee you get access to Swell Pro during the time your subscription is valid, subject to these Terms. All subscriptions with Swell Pro are paid in advance. You may at any time terminate your membership, in which case your membership will still be valid for the subscription time you have already paid for. The Owner reserves the right to change the subscription fees from time to time.</p><p id="911ba9e5-a09a-4fa3-84f7-fc27e239280b" class="">You can at any time choose to cancel/end your account by contacting the App Store. Please note that uninstalling the mobile application or closing your account will not automatically stop your Pro subscription — you must actively cancel the subscription. Please note that if you have subscribed to Swell Pro through the use of App Store, you can only cancel your subscription through the use of their services. To find out how to cancel the subscription and/or your account, please follow the instructions in the App Store account settings.</p><p id="8d55c934-01d2-420e-9312-262e0104730b" class="">By subscribing via App Store, you acknowledge and accept that: </p><ul id="787dfa48-0fd5-42a6-a8b2-ac664686b9d1" class="bulleted-list"><li style="list-style-type:disc">any payment due shall be charged to their Apple ID account;</li></ul><ul id="e69a2414-b52b-480d-ac78-ad6a0225e86e" class="bulleted-list"><li style="list-style-type:disc">subscriptions are automatically renewed for the same duration unless the User cancels at least 24 hours before the current period expires;</li></ul><ul id="3f000578-ffd8-4662-8bda-63ea630cec94" class="bulleted-list"><li style="list-style-type:disc">any and all fees or payments due for renewal will be charged within 24-hours before the end of the current period;</li></ul><ul id="0c6c36c6-9489-460b-b881-29bbf303d34f" class="bulleted-list"><li style="list-style-type:disc">subscriptions can be managed or cancelled in the Users’ App Store account settings.</li></ul><p id="3fad9476-0164-47ef-a148-b8d82979ebfa" class="">Unless otherwise specified, purchases done via third-party online stores are also subject to such third-parties’ terms and conditions, which, in case of any inconsistency or conflict, shall always prevail upon these Terms.</p><p id="94da7b4a-55eb-4913-876b-68e3b571e87e" class="">Users purchasing through such third-party online stores must therefore read such terms and conditions of sale carefully and accept them.</p><p id="a2a5f8a6-54ed-4384-a0f2-d17ddddce336" class="">
+</p><h3 id="0e3eb730-64ba-48d7-ab40-4d779773d5db" class="">Data Privacy and Security</h3><p id="664ac8b6-80b6-44a7-bc2b-5dd2f0db80c8" class="">The App operates locally on your device, and all diary entries and personal data are stored exclusively on your device. </p><p id="046cf85b-e2ff-4169-9d28-3d0694358c17" class="">We do not collect or store any personal data, including diary entries, on external servers. However, we may collect depersonalized statistics to improve the App&#x27;s functionality and performance, as outlined in our Privacy Policy.</p><p id="95a654c7-8fb4-433c-b060-fcb138243ffd" class="">You are responsible for taking appropriate security measures to protect your data, such as setting up device authentication and regular backups.</p><p id="4bee3040-1652-4a94-9db2-0c7ecf9c2592" class="">In the event of a lost or stolen device, we are not liable for any unauthorized access to your data. </p><p id="689010bc-15d4-4c93-ac3c-280fd2b34838" class="">
+</p><h3 id="e05fcb9a-540e-4be9-8999-0705ecdb14b2" class="">License </h3><p id="b7197a21-ec65-4e3c-961f-f4787f2abc33" class="">The Owner grants you a limited, revocable, non-exclusive, non-transferable license to access and make use of the App or its content. This license does not include [any resale or commercial use of the App or its contents]; any derivative use of the App or their contents; [any downloading or copying of account information for the benefit of another merchant]; [or any use of data mining, robots, or similar data gathering and extraction tools]. Except as expressly permitted herein, the App and/or any portion of the App may not be reproduced, sold, resold, visited or otherwise exploited for any purpose without the Owner’s express written consent. Any unauthorized use automatically terminates the permissions and/or licenses granted by us to you. </p><p id="1737c162-887a-442a-8f0e-c92038d4f771" class="">
+</p><h3 id="b0a40b16-9c26-4555-a4f9-2e7974637540" class="">Intellectual Property</h3><p id="8def10c6-c35d-4402-8df2-185e2239f31c" class="">The App and its contents, including but not limited to design, graphics, logos, and software, are the property of the Owner and are protected by intellectual property laws. You may not reproduce, modify, distribute, or sell any part of the App without the explicit written consent of the Owner. </p><p id="b15aa9a5-3929-45c1-8992-c45160fa9ac2" class="">You acknowledge that no title to the intellectual property in the Software is transferred to you. You further acknowledge that title and full ownership rights to the Software will remain the exclusive property of the App, and you will not acquire any rights to it. You shall not remove or obscure the Owner&#x27;s copyright, trademark or other proprietary notices from any of the materials contained in this package or downloaded together with the App.</p><p id="8df108b4-b7fb-49d2-9726-508035aea29b" class="">
+</p><h3 id="4ba6644d-1d07-4dd2-b8ab-19597029043b" class="">Disclaimer of Warranties</h3><p id="9919b3ef-b2ad-48e3-b962-f63aa033952f" class="">The App is provided on an &quot;as-is&quot; basis without any warranties, express or implied. The Owner disclaims all warranties, including but not limited to merchantability, fitness for a particular purpose, and non-infringement.</p><p id="e7c7b347-a79a-4d39-9bcb-97ca35078fcd" class="">The Owner does not guarantee the accuracy, completeness, or reliability of the App&#x27;s content, including any depersonalized statistics. </p><p id="c32cecfb-e08b-406c-81f6-3d19da16f282" class="">The Owner does not warrant that the functions contained in the App will meet your requirements or that the operation of the App will be error-free.</p><p id="3405ac8c-d14f-4c20-817e-13e9c7dc4c4a" class="">
+</p><h3 id="4b4e46ee-e940-4ff4-b237-654faaf3fd63" class="">Prohibited Activities</h3><p id="391e969e-822e-4fc6-9cce-637aa4c54d52" class="">You agree not to use the App in any way that may:</p><ul id="b803cfa1-3348-4567-985c-2dea53d4a5d1" class="bulleted-list"><li style="list-style-type:disc">Infringe upon the rights of others</li></ul><ul id="8666c6f7-a71f-4fc8-9029-7d955eb435c3" class="bulleted-list"><li style="list-style-type:disc">Invade anyone&#x27;s privacy</li></ul><ul id="f62f911e-e3ac-4900-a967-c1f7c2517aec" class="bulleted-list"><li style="list-style-type:disc">Harass, abuse, or harm others</li></ul><ul id="40aa0391-ee07-4cde-90e5-a2b3552ddb95" class="bulleted-list"><li style="list-style-type:disc">Promote or engage in illegal activities</li></ul><p id="6e218ef4-1ba1-42cb-a1fc-fb9dc59913e2" class="">You agree not to attempt to:</p><ul id="5a168a70-ef6a-4199-8331-a083c923b8fb" class="bulleted-list"><li style="list-style-type:disc">Gain unauthorized access to the App&#x27;s systems or data</li></ul><ul id="cec5c377-8238-44ab-99eb-06984a2f17c3" class="bulleted-list"><li style="list-style-type:disc">Interfere with or disrupt the App&#x27;s operation or servers</li></ul><ul id="7409b4c9-8892-41f3-924c-80929d99e921" class="bulleted-list"><li style="list-style-type:disc">Reverse engineer or attempt to extract the App&#x27;s source code</li></ul><p id="dfa5a6b7-3555-4a88-9a12-61a545f19fcb" class="">
+</p><h3 id="6d16b821-edab-482e-92e1-fef000d6c271" class="">Limitation of Liability</h3><p id="c53dfba7-2c8b-43b4-8636-8f3249c57f54" class="">In no event will the Owner be liable for special, incidental or consequential damages resulting from possession, access, use or malfunction of the Software, including but not limited to damages to property, loss of goodwill, computer or mobile device malfunction and, to the extent permitted by law, damages for personal injuries, property damage, lost profits or punitive damages from any causes of action arising out of or related to this EULA or the Software, whether arising in tort (including negligence), contract, strict liability or otherwise and whether or not the Owner has been advised of the possibility of such damages.</p><p id="0b73eb5c-ac9b-4446-9be4-4eb8cf2de2bf" class="">Because some states/countries do not allow certain limitations of liability, this limitation of liability shall apply to the fullest extent permitted by law in the applicable jurisdiction. This limitation of liability shall not be applied solely to the extent that any specific provision of this limitation of liability is prohibited by any federal, state, or municipal law, which cannot be pre-empted. This EULA gives you specific legal rights, and you may have other rights that vary from jurisdiction to jurisdiction. In no event shall the Owner&#x27;s liability for all damages (except as required by applicable law) exceed the actual price paid by you for use of the Software.</p><p id="2c53b5da-2acd-4cac-85c6-c814d79a7c06" class="">
+</p><h3 id="8f9bddb5-534a-49f3-a499-641650c6d021" class="">Medical Disclaimer</h3><p id="bbe8c1af-6419-4363-98ec-8f4638a2d088" class="">The information contained in the App is provided for informational purposes only and is not meant to substitute for the advice provided by your doctor or other health care professional. Practices conducted with the App are not a replacement for or a form of therapy nor are they intended to cure, treat, or diagnose medical conditions. Only your physician or other health care provider can do that. Please consult with a licensed physician or other qualified healthcare provider before making any decisions or taking any actions that may affect your health.</p><p id="3c49220a-3ef1-4973-9e79-407caf5d4c55" class="">Should you have depression, have been diagnosed with other mental disorders or have other existing mental health conditions always speak to a licensed physician or other qualified healthcare provider before using the App.</p><p id="4a1ef621-959f-4f75-bddf-ed678fe784f8" class="">If you have serious mental health conditions or are at risk of harming yourself or another person, you should seek urgent medical advice or call the emergency services.</p><p id="ce3d2361-70a4-4ed8-9acd-8ae11647bfa1" class="">
+</p><h3 id="1ad9fb98-2603-45ee-b7ac-77808f21d72f" class="">Changes to the Terms of Use</h3><p id="cc5195b5-c3fa-4516-9962-7cf86862e087" class="">The Owner reserves the right to update or modify these Terms of Use at any time without prior notice. Any changes made to the terms will be effective immediately upon posting the revised Terms of Use within the App. Your continued use of the App after the changes have been made indicates your acceptance of the revised Terms of Use.</p><p id="29c6d188-4a91-4c24-8326-1870b1e412bf" class="">
+</p><h3 id="2b8d703d-5e63-4941-b2bd-e9826b277b16" class="">Contact Us</h3><p id="7c0c369e-e08c-4b69-a90b-88778411d56c" class="">If you have any questions, concerns, or requests regarding this Terms or our app&#x27;s data practices, please contact us at <a href="mailto:contact@swelldiary.app">contact@swelldiary.app</a>.</p><p id="be3fdfa9-b3c9-4349-a4c8-6fedd46dd042" class="">By using Swell App, you acknowledge and agree to be bound by these Terms of Use.</p><p id="5e3661ff-e0ba-4653-a533-507eebad199d" class="">
+</p></div></article></body></html>
